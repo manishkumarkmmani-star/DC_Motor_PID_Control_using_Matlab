@@ -1,0 +1,73 @@
+# =========================================================================
+# .gitignore - Files to exclude from GitHub
+# =========================================================================
+# This file tells Git which files NOT to upload to GitHub
+# Keeps your repo clean by excluding temporary files
+
+# MATLAB Temporary Files
+*.m~              # MATLAB backup files
+*.mat             # MATLAB data files (can be huge)
+*.mex*            # MATLAB compiled files
+*.asv             # AutoSave files
+*.slxc            # Compiled Simulink model
+*.slx~            # Simulink backup
+
+# Simulink Build Artifacts
+slprj/            # Simulink build directory
+rtw/              # Real-Time Workshop files
+_ert_rtw/         # Embedded coder files
+
+# MATLAB Editor Metadata
+.project
+.classpath
+.settings/
+
+# Operating System
+.DS_Store         # macOS
+Thumbs.db         # Windows
+.directory        # Linux
+
+# IDE / Editor
+.vscode/          # VS Code
+.idea/            # IntelliJ
+*.swp
+*.swo
+*~
+
+# Python (if you add Python analysis)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# Generated Reports (optional - keep if you want history)
+# *.pdf          # Uncomment to ignore PDF reports
+# *.xlsx         # Uncomment to ignore Excel exports
+
+# Data Files (optional - change based on your needs)
+# *.csv          # Uncomment if you don't want to track data
+# *.txt          # Uncomment if you don't want to track logs
+
+# Large Binary Files (keep MATLAB scripts, exclude large data)
+*.bin
+*.exe
+*.dll
+*.so
+
+# Keep these (important for the project):
+!.gitkeep        # Allow empty directory placeholders
+!README.md
+!*.m             # Keep MATLAB scripts
+!*.md            # Keep documentation
+!*.png           # Keep result plots
+!*.txt           # Keep text documentation
+!LICENSE
+
+# =========================================================================
+# NOTE: Results/plots/*.png are included (images show results)
+#       Results/simulation_results.txt is included (shows console output)
+#       Do NOT ignore your MATLAB .m scripts or documentation!
+# =========================================================================
